@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: darkslategray;
+            color: antiquewhite;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Me livrando da maldição!</p>
+    <script>
+        var n1 = Number(prompt('Digite um número: '))
+        var n2 = Number(prompt('Digite outro número: '))
+        var soma = n1 + n2
+        alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+        // (number + number) + == soma
+        // (string + string) + == concatenação
+
+        // String --> Number:
+        // - Number.parseInt(n) --> números inteiros
+        // - Number.parseFloat(n) --> números reais
+        // - Number --> JS reconhece se é inteiro ou real
+
+        // Number --> String:
+        // - String(n)
+        // - n.toString()
+
+        // Formatando Strings: var s = 'JavaScript'
+        // - 'Eu estou aprendendo s' --> não faz interpolação
+        // - 'Eu estou aprendendo ' + s --> usa concatenação
+        // - `Eu estou aprendendo ${s} --> usa template string
+        // - s.length --> quantos caracteres a string tem
+        // - s.toUpperCase() --> tudo para MAIÚSCULAS
+        // - s.toLowerCase() --> tudo para minúsculas
+    </script>
+</body>
+
+</html>
