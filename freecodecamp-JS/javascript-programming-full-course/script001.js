@@ -876,19 +876,25 @@
 
 // ##########################################################################################################################
 
-let hands = ["rock", "paper", "scissor"]
+// let hands = ["rock", "paper", "scissor"]
 
-// function random() {
-//     console.log(hands[Math.floor(Math.random()*3)])
+// // function random() {
+// //     console.log(hands[Math.floor(Math.random()*3)])
+// // }
+
+// // random() --> MY SOLUTION
+
+// function getHand() {
+//     let randomIndex = Math.floor(Math.random() * 3)
+//     return hands[randomIndex]
 // }
 
-// random() --> MY SOLUTION
+// console.log(getHand())
 
-function getHand() {
-    let randomIndex = Math.floor(Math.random() * 3)
-    return hands[randomIndex]
-}
+// ##########################################################################################################################
 
-console.log(getHand())
+// 4:33:54 - Build Chrome Extension
+
+
 
 
