@@ -1,5 +1,5 @@
-let num1 = 8
-let num2 = 2
+let num1 = parseInt(prompt("Enter the first number:"))
+let num2 = parseInt(prompt("Enter the second number:"))
 document.getElementById("num1-el").textContent = num1
 document.getElementById("num2-el").textContent = num2
 let sumEl = document.getElementById("sum-el")
