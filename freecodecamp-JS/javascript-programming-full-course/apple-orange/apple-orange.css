@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 30vh 0;
+}
+
+div {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+div#apple-shelf {
+    background: coral;
+}
+
+div#orange-shelf {
+    background: crimson;
+}
