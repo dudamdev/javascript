@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    background: darkslategrey;
+    color: whitesmoke;
+    font-size: 32px;
+    margin: 20vh 0;
+}
+
+button {
+    background: coral;
+    color: darkslategray;
+    width: 150px;
+    padding: 8px 0;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
