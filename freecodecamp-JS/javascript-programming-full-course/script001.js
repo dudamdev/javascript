@@ -893,4 +893,78 @@
 
 // ##########################################################################################################################
 
-// 5:37:14 - Template strings on multiple lines
+// let myLeads = `["www.awesomelead.com"]` // string
+
+// // 1. Turns the myLeads string into an array
+// myLeads = JSON.parse(myLeads)
+
+// // 2. Pushes a new value to the array
+// myLeads.push("www.incrediblelead.com")
+
+// // 3. Turns the array into a string again
+// myLeads = JSON.stringify(myLeads)
+
+// // 4. Console.log the string using typeof to verify that it's a string
+// console.log(typeof myLeads)
+
+// ##########################################################################################################################
+
+// localStorage.setItem("myName", "Eduarda Matos")
+// let name = localStorage.getItem("myName")
+// console.log(name)
+
+// ##########################################################################################################################
+
+// Truthy and Falsy Values
+// const credits = 0
+
+// if (credits) {
+//     console.log("Let's play!")
+// } else {
+//     console.log("Sorry, you have no credits")
+// }
+
+// truthy
+// falsy values:
+// - false
+// - 0
+// - ""
+// - null -> how developers signalize emptiness
+// - undefined -> how JavaScript signalizes emptiness
+// - NaN
+
+// Working with null
+// let currentViewers = null
+
+// currentViewers = ["Jane", "Nick"]
+
+// currentViewers = null
+
+// if (currentViewers) {
+//     console.log("We have viewers")
+// }
+
+// Working with undefined
+// let currentViewers
+
+// console.log(currentViewers) // undefined
+
+// ##########################################################################################################################
+
+// let trueOrFalse = Boolean("")
+
+// console.log(trueOrFalse) // if Boolean ("Name") = true
+//                          // if Boolean ("")     = false
+
+// Guess the expression
+// console.log(Boolean(""))   // false --> empty string
+// console.log(Boolean("0"))  // true  --> string
+// console.log(Boolean(100))  // true  --> number
+// console.log(Boolean(null)) // false --> null
+// console.log(Boolean([]))   // true  --> array
+// console.log(Boolean(-0))   // false --> 0
+
+// ##########################################################################################################################
+
+
+// 6:27:34 - Preparing Deployment
