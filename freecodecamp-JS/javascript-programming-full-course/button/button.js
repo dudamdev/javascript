@@ -8,5 +8,9 @@
 const recipient = "James"
 let sender = "Duda"
 
-const email = `Hey ${recipient}! How is it going? Cheers ${sender}`
+const email = `
+Hey ${recipient}! 
+How is it going? Cheers ${sender}
+`
+
 console.log(email)

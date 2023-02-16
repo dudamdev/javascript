@@ -23,3 +23,5 @@ function renderLeads() {
     }
     ulEl.innerHTML = listItems
 }
+
+// JSON - JavaScript Object Notation
