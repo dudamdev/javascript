@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master DOM Manipulation: Part 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(#192832, #4b6b80);
+            color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100vh;
+        }
+
+        div {
+            border: 2px solid white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 24px;
+
+        }
+
+        #main-heading {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 24px;
+        }
+
+        li.list-items {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            padding: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="main-heading">Favorite Movie Franchise</h1>
+        <ul>
+            <li class="list-items">
+                <span>Neo</span>
+                The Matrix
+            </li>
+            <li class="list-items">Star Wars</li>
+            <li class="list-items">Harry Potter</li>
+            <li class="list-items">Lord of the Rings</li>
+            <li class="list-items">Marvel</li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
