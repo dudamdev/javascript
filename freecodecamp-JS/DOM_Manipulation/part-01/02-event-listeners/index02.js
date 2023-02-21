@@ -1,4 +1,5 @@
-// Event Listeners
+// EVENT LISTENERS
+
 // on HTML <button onclick="alert('I Love JavaScript')"></button>
 
 // element.addEventListener("click", function);

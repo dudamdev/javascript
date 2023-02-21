@@ -1,0 +1,70 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(img/library.jpg) no-repeat center center/ cover;
+}
+
+.container {
+    width: 550px;
+    height: 450px;
+}
+
+.header {
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: #353535;
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-content {
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px;
+    border-radius: 16px;
+    padding: 54px 40px 40px;
+}
+
+.main-content .text-area {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.main-content .person {
+    font-size: 1.4rem;
+    color: crimson;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.button-area button {
+    cursor: pointer;
+    background-color: #353535;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.button-area button:active {
+    background-color: brown;
+    border: none;
+}
+

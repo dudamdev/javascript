@@ -1,4 +1,5 @@
-// Event Probagation
+// EVENT PROPAGATION
+
 // 3 phases
 //  1. Event Capturing
 //  2. Target
@@ -14,40 +15,37 @@ window.addEventListener(
   "click",
   function () {
     console.log("Window");
-  },
-  true
+  }, false
 );
 
 document.addEventListener(
   "click",
   function () {
     console.log("Document");
-  },
-  true
+  }, false
 );
 
 document.querySelector(".div2").addEventListener(
   "click",
   function () {
+    // e.stopPropagation() // Stops the Event Propagation at this element
     console.log("DIV 2");
-  },
-  true
+  }, {once: true}
 );
 
 document.querySelector(".div1").addEventListener(
   "click",
   function () {
     console.log("DIV 1");
-  },
-  true
+  }, false
 );
 
-document.querySelector("button").addEventListener(
+document.querySelector(".button").addEventListener(
   "click",
-  function (e) {
-    console.log(e);
-  },
-  true
+  function (e) { // event object
+    e.preventDefault()
+    console.log(e.target.innerText = "Clicked");
+  }, false
 );
 
 // 52:55
