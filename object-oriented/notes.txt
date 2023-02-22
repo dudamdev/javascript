@@ -1,0 +1,98 @@
+SECTION: Object Oriented Programming (OOP) with JavaScript
+    LECTURE: What is Object Oriented Programming?
+        --> OOP is a for of write and organize the code based on the concepts of objects.
+        --> Objects are used to model (describe) real-world (e.g. user or to-do list) or abstract features (e.g. HTML component or data structure).
+        --> Objects may contain data (properties) and code (methods). By using objects, we pack data and the corresponding behavior into one block.
+        --> In OOP, objects are self-contained pieces/blocks of code.
+        --> Objects are building blocks of applications, and interact with one another.
+        --> Interactions happen through a public interface (API): methods that we code outside of the object can access and use to communicate with the object.
+        --> OOP was developed with the goal of organizing code, making it more flexible and easier to maintain.
+        --> Functional Programming: another Programming paradigma
+
+    LECTURE: Classes and Instances (Traditional OOP)
+        --> class: like a blueprint from which we can create new objects
+           Class representation: (not JavaScript syntax) -- JavaScript does NOT support real classes
+                User {
+                    user
+                    password
+                    email
+
+                    login(password) {   
+                        // Login logic
+                    }
+                    sendMessage(str) {
+                        // Sending logic
+                    }
+                }
+            Instance representation:
+                new User("Jonas") {
+                    user = "Jonas"
+                    password = "dk23s"
+                    email = "hello@jonas.io"
+
+                    login(password) {   
+                        // Login logic
+                    }
+                    sendMessage(str) {
+                        // Sending logic
+                    }
+                }
+        --> instance: real object that can be used on a code, which was created from a class. The class itself is not an object.
+        --> The class can be used to create as many instances as we need in the application. 
+
+    LECTURE: The 4 Fundamental OOP Principles
+        --> Abstraction
+            ~ ignore or hide details that don't matter. Allows getting an overview perspecive of the thing being implemented, instead of adding details that don't matter to the implementation.
+        --> Encapsulation
+            ~ keep properties and methods private inside the class, so they are not accessible from outside the class. Some methods can be exposed as a public interface (API).
+            User {
+                    user
+                    private password // representation - not real JavaScript
+                    private email // representation - not real JavaScript
+
+                    login(word) {   
+                        this.password === word
+                    }
+                    comment(text) {
+                        this.checkSPAM(text)
+                    }
+                    private checkSPAM(text) {
+                        // Verify logic
+                    }
+                }
+            ~ prevents external code from accidentally manipulating internal properties/state
+        --> Inheritance
+            Parent Class and Child Class: the Child class extends the Parent class
+            ~ make all properties and methods of a certain class available to a child class, forming a hierarchical relationship between classes. This allows the reutilization of common logic and to model real-word relationships.
+            ~ the clild class can have its own methods and properties
+        --> Polymorphism
+            ~ a child class can overwrite a method it inherited from a parent class
+
+    LECTURE: OOP in JavaScript: Protoypes
+
+        --> Instatiation: process of creating an instance from a class
+            ~ in JavaScript we have Protoypes to which all objects are linked. Each object has a prototype.
+            ~ Prototypal inheritance: prototype object contains methods (behavior) and properties accessible to all objects linked to that prototype. Instance inheriting from a Class
+            ~ Bahavior is delegated to the linked prototype object. Delegation: objects delegates their behavior to the prototype
+        
+        --> 3 ways of implementing prototypal inheritance in JavaScript
+            1. Constructor Functions
+                - Technique to create objects from a function
+                - This is how built-in objects like Array, Maps or Sets are actually implemented
+
+            2. ES6 Classes
+                - Modern alternative to constructor function syntax
+                - "Syntactic sugar": behind the scenes, ES6 classes work exactly like constructor functions;
+                - ES6 classes do NOT behave like classes in classical OOP
+            
+            3. Object.create()
+                - Easiest and most straightforward way of linking an object to a prototype object.
+
+    CODE COMMENTS:
+        - Construction Functions 
+            - are created with the "new" operator
+            - starts with cappital letter
+            - does not work with arrow functions, because it doesn't have the "this" keyword.
+            - only functions declarations and functions expressions.
+
+    Constructor function [Person()]
