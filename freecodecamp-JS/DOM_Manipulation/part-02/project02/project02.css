@@ -18,6 +18,10 @@ body {
     padding: 5px;
     box-shadow: 0 0 3px black;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #open-btn:hover {
@@ -37,7 +41,7 @@ body {
     border-radius: 5px;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     animation-name: animatemodal;
