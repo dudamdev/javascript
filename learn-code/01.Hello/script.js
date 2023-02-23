@@ -88,8 +88,13 @@
 
 // ############################################################################################################################################################################
 
-tipper("75")
 function tipper(a) {
-    let bill = parseInt(a);     // espera um número inteiro
+    let bill = parseInt(a);     // filter (string) to a interin number
     console.log(bill + 5);
 }
+function bigTipper(a) {
+    let bill = parseInt(a);
+    console.log(bill + 15);
+}
+
+tipper("75")
