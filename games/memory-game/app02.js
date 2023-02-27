@@ -1,68 +1,81 @@
 const cardArray = [
     {
-        name: "fries",
-        img: "img/fries.png"
+        name: "bear",
+        img: "img/bear.jpg"
     },
-
     {
-        name: "cheeseburger",
-        img: "img/cheeseburger.png",
+        name: "cat",
+        img: "img/cat.jpg"
     },
-
     {
-        name: "hotdog",
-        img: "img/hotdog.png",
+        name: "deer",
+        img: "img/deer.jpg"
     },
-
     {
-        name: "ice-cream",
-        img: "img/ice-cream.png",
+        name: "dog",
+        img: "img/dog.jpg"
     },
-
     {
-        name: "milkshake",
-        img: "img/milkshake.png",
+        name: "fox",
+        img: "img/fox.jpg"
     },
-
     {
-        name: "pizza",
-        img: "img/pizza.png",
+        name: "hare",
+        img: "img/hare.jpg"
     },
-
     {
-        name: "fries",
-        img: "img/fries.png"
+        name: "lion",
+        img: "img/lion.jpg"
     },
-
     {
-        name: "cheeseburger",
-        img: "img/cheeseburger.png",
+        name: "panda",
+        img: "img/panda.jpg"
     },
-
     {
-        name: "hotdog",
-        img: "img/hotdog.png",
+        name: "rabbit",
+        img: "img/rabbit.jpg"
     },
-
     {
-        name: "ice-cream",
-        img: "img/ice-cream.png",
+        name: "bear",
+        img: "img/bear.jpg"
     },
-
     {
-        name: "milkshake",
-        img: "img/milkshake.png",
+        name: "cat",
+        img: "img/cat.jpg"
     },
-
     {
-        name: "pizza",
-        img: "img/pizza.png",
+        name: "deer",
+        img: "img/deer.jpg"
+    },
+    {
+        name: "dog",
+        img: "img/dog.jpg"
+    },
+    {
+        name: "fox",
+        img: "img/fox.jpg"
+    },
+    {
+        name: "hare",
+        img: "img/hare.jpg"
+    },
+    {
+        name: "lion",
+        img: "img/lion.jpg"
+    },
+    {
+        name: "panda",
+        img: "img/panda.jpg"
+    },
+    {
+        name: "rabbit",
+        img: "img/rabbit.jpg"
     }
-];
+]
 
-cardArray.sort(() => 0.5 - Math.random())   // shortcut to shuffle an array randomly
+cardArray.sort(() => 0.5 - Math.random())
 
-const gridDisplay = document.querySelector("#grid")
+const gridDisplay = document.querySelector("#grid02")
 const resultDisplay = document.querySelector("#result")
 const attemptsDisplay = document.querySelector("#attempts")
 const cardsWon = []
@@ -110,15 +123,13 @@ function checkMatch() {
     cardsChosenIds = [];
 
     if (cardsWon.length == cardArray.length / 2) {
-        showPopup(`Congratulations!\nYou found them all!\nHeading to Level 2...`);
+        showPopup("Congratulations! You found them all!");
         resultDisplay.textContent = attempts;
-        setTimeout(() => {
-            window.location.href = "index02.html"
-        }, 3000);
     }
 }
 
 function showPopup(message) {
+    const popup = document.getElementById("popup");
     const popupContent = document.getElementById("popup-content");
     const popupMessage = document.getElementById("popup-message");
 

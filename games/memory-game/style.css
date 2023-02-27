@@ -26,6 +26,12 @@ h3 {
     row-gap: 1vh;
 }
 
+#grid02 {
+    display: grid;
+    grid-template-columns: repeat(6, 108px);
+    row-gap: 1vh;
+}
+
 #popup-content {
     display: none;
     color: darkorange;
