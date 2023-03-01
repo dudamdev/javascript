@@ -1,20 +1,44 @@
-.grid { 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+#score {
+    position: absolute;
+    top: 16vh;
+
+}
+
+.grid {
     position: absolute;
     width: 560px;
     height: 300px;
-    border: 1px solid black;
-}
-
-.block {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: crimson;
-}
-
-.user{
+    border: double 5px black;
+    margin-top: 100px;
+  }
+  
+  .user {
     position: absolute;
     width: 100px;
     height: 20px;
     background-color: coral;
-}
+  }
+  
+  .block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: crimson;
+    border-radius: 10px;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: darkslategrey;
+  }
